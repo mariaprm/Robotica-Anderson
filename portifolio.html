@@ -1,0 +1,112 @@
+<head>
+
+    <style>
+
+        @font-face {
+            font-family: 'stardew_logo';
+            src: url('stardew-valley-all-caps-webfont.woff2') format('woff2'),
+                url('stardew-valley-all-caps-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'stardew_text';
+            src: url('stardewvalley-webfont.woff2') format('woff2'),
+                url('stardewvalley-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="src.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="main_title">
+        <label id="title_header">Meu portfolio</label>
+
+        <button id="start_button_2" class="main_button button_effects" style="left: calc(50% - 10vh);">
+            <label class="button_text">Load</label>
+            <div class="icon" style="background: url('images/gato.png');background-repeat: no-repeat;background-size: contain;background-position: center;"></div>
+        </button>
+    
+        <button id="start_button_1" class="main_button button_effects" style="left: calc(50% - 10vh + 30vh);">
+            <label class="button_text">Co-Op</label>
+            <div class="icon" style="background: url('images/world.png');background-repeat: no-repeat;background-size: contain;background-position: center; width: 15vh; height: 15vh; left: calc(50% - 7.5vh); top: -0.5vh"></div>
+        </button>
+    
+        <button id="start_button_0" class="main_button button_effects" onclick="dispose_frame(0)" style="left: calc(50% - 10vh - 30vh);">
+            <label class="button_text">New</label>
+            <div class="icon" style="background: url('images/play.png');background-repeat: no-repeat;background-size: contain;background-position: center;"></div>
+        </button>
+    </div>
+
+    <div id="about_me">
+
+        <label class="thick_text" style="left: 54%; top: 6.3%">Maria</label>
+        <label class="thick_text" style="left: 54%; top: 15.6%">Dezoito</label>
+        <label class="thick_text" style="left: 54%; top: 24.6%">Maa</label>
+        <label class="thick_text" style="left: 54%; top: 33.6%">Ice-cream</label>
+
+        <button class="ok_button button_effects" onclick="dispose_frame(1)" style="left: 80%; top: 90%"></button>
+    </div>
+
+    <button id="back_avatar" class="back_button button_effects" onclick="dispose_frame(2)"></button>
+
+    <div data-slide="0" id="main_slide" class="slide" style="left: calc(50% - 50vh)">
+
+        <label class="thick_text" style="width: 100%; font-size: 7vmin; color: #C95653; top: 12vh; left: 5vh">About me</label>
+        <label class="thick_text" style="width: 65vh; top: 18vh; left: 5vh">Meu nome e Maria;<br/>Eu tenho 18 anos;<br/>Sou estudante e programadora nas horas vagas;<br/>Moro em Sao Paulo, Brasil.</label>
+        <label class="thick_text" style="width: 100%; font-size: 8vmin; color: #C95653; top: 40vh; left: 5vh">Free Time</label>
+        <label class="thick_text" style="width: 65vh; top: 47vh; left: 5vh">No meu tempo livre eu gosto de jogar com meus amigos ou fazer artesanato;<br/>Eu também gosto de ler livros;<br/>E gosto de assistir series de invetigaçao criminal</label>
+
+        <div class="image_frame" style="left: 70vh; top: 13vh">
+            <div style="width: 80%; height: 80%; background: url('images/controller.png'); background-repeat: no-repeat; background-size: contain; background-position: center; position: inherit; left: 10%; top: 10%"></div>
+        </div>
+        <div class="image_frame" style="left: 70vh; top: 42vh">
+            <div style="width: 80%; height: 80%; background: url('images/book.png'); background-repeat: no-repeat; background-size: contain; background-position: center; position: inherit; left: 10%; top: 10%"></div>
+        </div>
+
+        <button id="back_slide" class="back_button button_effects" style="position: inherit; left: 0vh; top: 75vh; visibility: inherit;" onclick="dispose_frame(3)"></button>
+        <button class="arrow_button button_effects" data-slide="0" style="left: 95vh; top: 75vh"></button>
+    </div>
+
+    <div data-slide="1" class="slide" style="left: calc(50% - 50vh)">
+
+        <label class="thick_text" style="width: 100%; font-size: 7vmin; color: #C95653; top: 12vh; left: 5vh">My projects</label>
+        <label class="thick_text" style="width: 65vh; top: 18vh; left: 5vh">Eu tenho alguns projetos em andamento porem nenhum deles lançado de forma profissional mas pretendo futuramente lançar um site proprio. Eu tenho conhecimento basico de linguagens como: HTML, CSS, Java, SQL, Python, Markdown e pretendo começar a programar nessas linguagens de forma profissional</label>
+
+        <div class="image_frame" style="left: 70vh; top: 13vh">
+            <div style="width: 80%; height: 80%; background: url('images/quilombo.png'); background-repeat: no-repeat; background-size: contain; background-position: center; position: inherit; left: 10%; top: 10%"></div>
+        </div>
+        <div class="image_frame" style="left: 70vh; top: 42vh">
+            <div style="width: 80%; height: 80%; background: url('images/motoca_pobre.png'); background-repeat: no-repeat; background-size: contain; background-position: center; position: inherit; left: 10%; top: 10%"></div>
+        </div>
+
+        <button class="arrow_button button_effects" data-slide="1" style="left: 95vh; top: 75vh"></button>
+        <button class="arrow_rev_button button_effects" data-slide="1" style="left: 0vh; top: 75vh"></button>
+    </div>
+
+    <div data-slide="2" class="slide" style="left: calc(50% - 50vh)">
+
+        <label class="thick_text" style="width: 100%; font-size: 7vmin; color: #C95653; top: 12vh; left: 5vh">yxz_maah</label>
+        <label class="thick_text" style="width: 90vh; top: 18vh; left: 5vh; line-height: 3vmin"><br/>Este site foi criado como parte de um portfolio desenvolvido para a aula de robotica do Anderson. Todos os direitos reservados a Maria Paula Romero Monteiro. © Copyright 2024. Produzido por Maria Paula 3°A</label>
+
+        <button class="arrow_button button_effects" data-slide="5" style="left: 95vh; top: 75vh"></button>
+        <button class="arrow_rev_button button_effects" data-slide="5" style="left: 0vh; top: 75vh"></button>
+    </div>
+
+    <div data-slide="6" class="slide" style="left: calc(50% - 50vh)">
+
+        <label class="thick_text" style="width: 100%; font-size: 30vmin; color: #C95653; top: 12vh; text-align: center;">END</label>
+        <label class="thick_text" style="width: 100%; font-size: 4vmin; top: 40vh; text-align: center;">written by Maria<br/>designed by Maria & Marcos</label>
+   
+        <div class="image_frame" style="left: calc(50% - 12.5vh); top: 42vh; background: none">
+            <div style="width: 200%; height: 200%; background: url('images/panelinha.png'); background-repeat: no-repeat; background-size: contain; background-position: center; position: inherit; left: -50%; top: -50%"></div>
+        </div>
+
+        <button class="arrow_rev_button button_effects" data-slide="6" style="left: 0vh; top: 75vh"></button>
+    </div>
+</body>

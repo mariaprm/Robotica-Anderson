@@ -1,0 +1,248 @@
+
+body {
+
+    background: linear-gradient(#003770, #3DB1F3);
+    margin: 0%;
+    overflow: hidden;
+}
+
+#main_title {
+
+    width: 100vh;
+    height: 50vh;
+
+    position: absolute;
+    top: 10vh;
+    left: calc(50% - 50vh);
+
+    background: url('images/image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#about_me {
+
+    width: 100vh;
+    height: 80vh;
+
+    position: absolute;
+    top: 10vh;
+    left: calc(50% - 50vh - 100%);
+
+    background: url('images/about.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.slide {
+
+    width: 100vh;
+    height: 80vh;
+
+    position: absolute;
+    top: 10vh;
+
+    visibility: hidden;
+
+    background: url('images/frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#title_header {
+
+    width: 80vh;
+    height: 25vh;
+
+    position: inherit;
+
+    color: rgb(100, 50, 0);
+    font-family: stardew_logo;
+    font-size: 15vmin;
+    text-align: center;
+}
+
+.main_button {
+
+    width: 20vh;
+    height: 16vh;
+
+    position: inherit;
+    top: 70vh;
+
+    border-style: none;
+
+    background: url('images/button.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button_effects:hover {
+
+    transform: scale(1.1)
+}
+
+.icon {
+
+    width: 6vh;
+    height: 6vh;
+
+    position: inherit;
+    left: calc(50% - 3vh);
+    top: 9vh;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.button_text {
+
+    width: 20vh;
+    height: 10vh;
+
+    position: inherit;
+    top: 3vh;
+
+    color: #C95653;
+    font-family: stardew_text;
+    font-size: 8vmin;
+    text-align: center;
+}
+
+.cloud {
+
+    width: 20vh;
+    height: 16vh;
+
+    position: absolute;
+    left: -100vh;
+
+    background: url('images/cloud.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    z-index: -1;
+}
+
+.star {
+
+    width: 20vh;
+    height: 20vh;
+
+    position: absolute;
+
+    background: url('images/estrela.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    z-index: -2;
+}
+
+.ok_button {
+    
+    width: 5vh;
+    height: 5vh;
+
+    position: inherit;
+
+    border-style: none;
+
+    background: url('images/ok_button.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.back_button {
+
+    width: 20vh;
+    height: 10vh;
+
+    position: absolute;
+    top: 90vh;
+    left: 80vw;
+
+    border-style: none;
+    visibility: hidden;
+
+    background: url('images/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.arrow_button {
+    
+    width: 5vh;
+    height: 5vh;
+
+    position: inherit;
+
+    border-style: none;
+
+    background: url('images/arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.arrow_rev_button {
+    
+    width: 5vh;
+    height: 5vh;
+
+    position: inherit;
+
+    border-style: none;
+
+    background: url('images/arrow_reverse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.thick_text {
+    
+    width: 20vh;
+    height: 5vh;
+
+    position: inherit;
+
+    color: rgb(100, 50, 0);
+    font-family: stardew_text;
+    font-size: 4vmin;
+}
+
+.image_frame {
+
+    width: 25vh;
+    height: 25vh;
+
+    position: inherit;
+
+    background: url('images/image_frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+td {
+
+    line-height: 7vmin
+}
