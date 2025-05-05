@@ -3,7 +3,7 @@ const clouds = []
 const stars = []
 const disposing = []
 
-let screen_velocity = 1
+let screen_velocity = 0
 let current_slide = 0
 
 const dispose_element = (element, id, direction) => {
